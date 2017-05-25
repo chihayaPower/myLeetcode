@@ -24,13 +24,13 @@ public class test034 {
             }
         }
         
-        if(A[pos] != target)
+        if(A[pos] != target)    //不等于   就是找到了   
             return res;
         
         //second iteration, find the right boundary of this target
         int newlow = pos;
         int newhigh = A.length-1;
-        while(newlow <= newhigh){
+        while(newlow <= newhigh){               //搜后半部分  找到上限
             int newmid = (newlow+newhigh)/2;
             if(A[newmid] == target)
                 newlow = newmid + 1;
@@ -42,7 +42,7 @@ public class test034 {
         //third iteration, find the left boundary of this target
         newlow = 0;
         newhigh = pos;
-        while(newlow <= newhigh){
+        while(newlow <= newhigh){               //搜前半部分  找到下限
             int newmid = (newlow+newhigh)/2;
             if(A[newmid] == target)
                 newhigh = newmid - 1;
