@@ -6,6 +6,22 @@ import java.util.List;
 
 public class test015 {
 	
+	/*
+	 * 15 这道题凭我现有知识实在解答不上来，只好网上搜索解法，才发现 K Sum 是一类问题，但是网上没有比较简洁的代码，我想对于初学者来说，可能还是想先看看这道题怎么解，然后才有兴趣去看其扩展吧。
+【题目】
+Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
+
+Note:
+
+Elements in a triplet (a,b,c) must be in non-descending order. (ie, a ≤ b ≤ c)
+The solution set must not contain duplicate triplets.
+    For example, given array S = {-1 0 1 2 -1 -4},
+
+    A solution set is:
+    (-1, 0, 1)
+    (-1, -1, 2)
+	 */
+	
   	static List<List<Integer>> res = new ArrayList<List<Integer>>();
 
     public static List<List<Integer>> threeSum(int[] nums) {
@@ -18,7 +34,7 @@ public class test015 {
     	
     	int len = nums.length;
     	
-    	for (int i = 0; i < len-2; i++) {
+    	for (int i = 0; i < len-2; i++) {   //针对每个元素， 寻找从其后一个元素开始到最后一个元素之间的两个数  总和为0
     		//if (i > 0 && nums[i] == nums[i-1]) continue;
     		find(nums, i+1, len-1, nums[i]);
     	}
