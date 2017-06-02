@@ -69,7 +69,7 @@ public class test046AND047 {
                 //System.out.println("1: "+item.toString());
                 permutation_helper(num,res,item,visited);
                 //System.out.println("2: "+item.toString());
-                System.out.println("index: "+ i + " item is "+ item.toString() +" remove value is: "+item.get(item.size()-1));
+                //System.out.println("index: "+ i + " item is "+ item.toString() +" remove value is: "+item.get(item.size()-1));
                 item.remove(item.size()-1);
                 
                 
@@ -97,7 +97,7 @@ public class test046AND047 {
     public static void main(String[] args){
     	int sample[] = {1,2,3};
     	List<List<Integer>> res = permuteUnique(sample);
-    	//System.out.println("res: "+res.toString());
+    	System.out.println("res: "+res.toString());
     	
     }
 }

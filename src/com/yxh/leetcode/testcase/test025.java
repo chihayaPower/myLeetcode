@@ -2,6 +2,19 @@ package com.yxh.leetcode.testcase;
 
 import com.yxh.leetcode.testcase.entity.ListNode;
 
+/*
+ * 25Leetcode: Reverse Nodes in k-Group
+
+仅允许使用常数时间, 交换 k-group 的节点
+ 
+思路:
+1. 完全逆转一个链表: 每遍历到一个节点, 就将该节点放在链表首位
+2. 在(1) 的基础上添加大小为 j 的窗口
+ 
+总结:
+1. 看来上一道题目思路也不是最优的
+ */
+
 public class test025 {
     public ListNode reverseKGroup(ListNode head, int k) {
         ListNode newHead = new ListNode(0);
@@ -37,7 +50,7 @@ public class test025 {
             head = next_node;  //  头指针后移
             next_node = tmp;  //  next_node 后移
         }
-        last_tail.next = head;
+        last_tail.next = head;  //连上之前的已调转好的
         return res;
     }
     

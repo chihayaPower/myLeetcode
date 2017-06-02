@@ -1,8 +1,15 @@
 package com.yxh.leetcode.testcase;
 
 import com.yxh.leetcode.testcase.entity.ListNode;
-
+/*
+ * 21 [LeetCode] Merge Two Sorted Lists
+Merge two sorted linked lists and return it as a new list. The 
+new list should be made by splicing together the nodes of the first two 
+lists.
+维护一个新的链表，用两个指针指向两个链表，类似merge sot的比较。
+ */
 public class test021 {
+	
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
     	if (l1 == null) {
     		return l2;
