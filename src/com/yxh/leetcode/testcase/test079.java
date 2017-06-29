@@ -52,8 +52,7 @@ public class test079 {
         if (board[rowindex][colindex] != word.charAt(index))  
             return false;  
         visited[rowindex][colindex] = true;  
-        boolean res = dfs(board, word, index + 1, rowindex - 1, colindex,  
-                visited)  
+        boolean res = dfs(board, word, index + 1, rowindex - 1, colindex, visited)  
                 || dfs(board, word, index + 1, rowindex + 1, colindex, visited)  
                 || dfs(board, word, index + 1, rowindex, colindex + 1, visited)  
                 || dfs(board, word, index + 1, rowindex, colindex - 1, visited);  
