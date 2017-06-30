@@ -1,7 +1,5 @@
 package com.yxh.leetcode.testcase;
 
-
-
-public class test087 {
+public class test092 {
 
 }
