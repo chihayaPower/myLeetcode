@@ -40,7 +40,7 @@ public class test005 {
 			R++;
 		}
 		
-		return 0;
+		return R-L-1;
 	}
 
 

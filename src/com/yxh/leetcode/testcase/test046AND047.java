@@ -47,7 +47,7 @@ public class test046AND047 {
             return res;	
         boolean[] visited = new boolean[num.length];  
         Arrays.sort(num);
-        permutation_helper(num,res,item,visited);
+        permutation_helper(num,res,item,visited);  //dfs
         return res;
     }
     
@@ -71,10 +71,6 @@ public class test046AND047 {
                 //System.out.println("2: "+item.toString());
                 //System.out.println("index: "+ i + " item is "+ item.toString() +" remove value is: "+item.get(item.size()-1));
                 item.remove(item.size()-1);
-                
-                
-                
-                
                 visited[i]=false;
             }
         }

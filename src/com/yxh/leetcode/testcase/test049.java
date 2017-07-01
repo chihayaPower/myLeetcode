@@ -8,6 +8,20 @@ import java.util.List;
 
 
 /*
+ * Group Anagrams
+ * 
+ * Given an array of strings, group anagrams together.
+
+For example, given: ["eat", "tea", "tan", "ate", "nat", "bat"], 
+Return:
+
+[
+  ["ate", "eat","tea"],
+  ["nat","tan"],
+  ["bat"]
+]
+Note: All inputs will be in lower-case.
+ * 
  * 把字符串中的字符排序后，若都相等则为同一组。
 
 不能把字符串中的字符ascii码相加后得到sum，若sum相等则为一组，反例："duh","ill"，sum = 321。

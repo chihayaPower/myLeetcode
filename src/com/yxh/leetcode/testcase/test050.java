@@ -2,6 +2,12 @@ package com.yxh.leetcode.testcase;
 
 
 /*
+ * 
+ * Pow(x, n)
+ * 
+ * Implement pow(x, n).
+
+Seen this question in a real interview before?   Yes  
  * 方法二：
 网上的代码很多，这里贴出来一个我认为最好理解的一个吧。
 参考了http://www.cnblogs.com/springfor/p/3870929.html

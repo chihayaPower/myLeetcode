@@ -35,11 +35,11 @@ public class test076 {
 	        return res;
 	    
 	    HashMap<Character, Integer> dict = new HashMap<Character, Integer>();
-	    for(int i =0;i < T.length(); i++){
+	    for(int i =0;i < T.length(); i++){   //处理模板串
 	        if(!dict.containsKey(T.charAt(i)))
-	            dict.put(T.charAt(i), 1);
+	            dict.put(T.charAt(i), 1);  //第一次遇到模板的串  记录为1
 	        else
-	            dict.put(T.charAt(i), dict.get(T.charAt(i))+1);
+	            dict.put(T.charAt(i), dict.get(T.charAt(i))+1);   //有多少个   记录为多少个数
 	    }
 	    
 	    int count = 0;
@@ -47,9 +47,9 @@ public class test076 {
 	    int minLen = S.length()+1;
 	    for(int i=0;i<S.length();i++){
 	        if(dict.containsKey(S.charAt(i))){
-	            dict.put(S.charAt(i),dict.get(S.charAt(i))-1);
+	            dict.put(S.charAt(i),dict.get(S.charAt(i))-1);  //用掉了一个字串的字符   模式串减一
 	            if(dict.get(S.charAt(i)) >= 0)
-	                count++;
+	                count++;           //计数器加一
 	                
 	            while(count == T.length()){
 	                if(dict.containsKey(S.charAt(pre))){

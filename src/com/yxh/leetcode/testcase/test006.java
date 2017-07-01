@@ -34,6 +34,9 @@ public class test006 {
                 boolean flag = true;
                 int childLenOfGroup1 = 2 * (numRows - 1 - row);           
                 int childLenOfGroup2 = lengthOfGroup - childLenOfGroup1;
+                
+                System.out.println("numRows= "+numRows+" row= "+row+" childLenOfGroup1= " +childLenOfGroup1+" childLenOfGroup2= "+childLenOfGroup2);
+                
                 while (currentRow <s.length()){
                     strBuilder.append(s.charAt(currentRow));
                     if (flag)

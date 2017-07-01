@@ -1,6 +1,17 @@
 package com.yxh.leetcode.testcase;
 
 /*
+ * Remove Duplicates from Sorted Array II   至多重复出现两次
+ * 
+ * 
+ * Follow up for "Remove Duplicates":
+What if duplicates are allowed at most twice?
+
+For example,
+Given sorted array nums = [1,1,1,2,2,3],
+
+Your function should return length = 5, with the first five elements of nums being 1, 1, 2, 2 and 3. It doesn't matter what you leave beyond the new length.
+ * 
  * 原题链接: http://oj.leetcode.com/problems/remove-duplicates-from-sorted-array-ii/ 
 这道题跟Remove Duplicates from Sorted Array比较类似，区别只是这里元素可以重复出现至多两次，而不是一次。其实也比较简单，
 只需要维护一个counter，当counter是2时，就直接跳过即可，否则说明元素出现次数没有超，继续放入结果数组，

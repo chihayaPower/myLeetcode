@@ -12,6 +12,16 @@ public class test048 {
 	 * 
 	 * for(int i=0;i<m;i++){ for(int j=0; j<n; j++){ matrix[i][j] =
 	 * result[i][j]; } } }
+	 * 
+	 * Rotate Image
+	 * 
+	 * You are given an n x n 2D matrix representing an image.
+
+Rotate the image by 90 degrees (clockwise).
+
+Follow up:
+Could you do this in-place?
+	 * 
 	 */
 
 	// in place
