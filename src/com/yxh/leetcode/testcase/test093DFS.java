@@ -21,7 +21,7 @@ public class test093DFS {
         for(int i=0; i<3 && i<s.length()-1; i++){  
             String substr = s.substring(0,i+1);  //某个IP字段     从一个字符开始到3个字符结束
             if (isValid(substr))
-                dfs(s.substring(i+1, s.length()), start+1, item + substr + '.', res);  
+                dfs(s.substring(i+1, s.length()), start+1, item + substr + '.', res);    
         }  
     }  
       
