@@ -17,7 +17,7 @@ Two binary trees are considered equal if they are structurally identical and the
 
 代码如下：
  */
-public class test100TREE {
+public class test100TREE两个二叉树是否相等 {
 	public boolean isSameTree(TreeNode p, TreeNode q) {
         if(p==null&&q==null)
             return true;
