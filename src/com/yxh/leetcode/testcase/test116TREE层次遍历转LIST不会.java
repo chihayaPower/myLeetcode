@@ -41,7 +41,7 @@ After calling your function, the tree should look like:
     所以是O(n)，而空间上因为不需要额外空间来存储队列了，所以是O(1)。代码如下： 
 
  */
-public class test116TREE层次遍历 {
+public class test116TREE层次遍历转LIST不会 {
 	public void connect(TreeLinkNode root) {  
 	    if(root == null)  
 	        return;  
